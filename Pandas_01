@@ -1,0 +1,100 @@
+**Pandas**
+
+
+Install pandas
+
+pip install pandas
+
+
+#import the pandas library and aliasing as pd
+import pandas as pd
+s = pd.Series()
+print (s)
+
+
+
+#import the pandas library and aliasing as pd
+import pandas as pd
+import numpy as np
+data = np.array(['a','b','c','d'])
+s = pd.Series(data)
+print (s)
+
+#import the pandas library and aliasing as pd
+import pandas as pd
+import numpy as np
+data = np.array(['a','b','c','d'])
+s = pd.Series(data,index=[100,101,102,103])
+print (s)
+
+**Create a Series from dict**
+
+A dict can be passed as input and if no index is specified, then the dictionary keys are taken in a sorted order to construct index. If index is passed, the values in data corresponding to the labels in the index will be pulled out.
+
+#import the pandas library and aliasing as pd
+import pandas as pd
+import numpy as np
+data = {'a' : 0., 'b' : 1., 'c' : 2.}
+s = pd.Series(data)
+print (s)
+
+#import the pandas library and aliasing as pd
+import pandas as pd
+import numpy as np
+data = {'a' : 0., 'b' : 1., 'c' : 2.}
+s = pd.Series(data,index=['b','c','d','a'])
+print (s)
+
+#import the pandas library and aliasing as pd
+import pandas as pd
+import numpy as np
+s = pd.Series(5, index=[0, 1, 2, 3])
+print (s)
+
+import pandas as pd
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+#retrieve the first element
+print (s[0])
+
+import pandas as pd
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+#retrieve the first three element
+print (s[:3])
+
+import pandas as pd
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+#retrieve the last three element
+print (s[-3:])
+
+import pandas as pd
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+#retrieve a single element
+print (s['a'])
+
+import pandas as pd
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+#retrieve multiple elements
+print (s[['a','c','d']])
+
+#import the pandas library and aliasing as pd
+import pandas as pd
+df = pd.DataFrame()
+print (df)
+
+
+
+import pandas as pd
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['Name','Age'])
+print (df)
+
+import pandas as pd
+data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+df = pd.DataFrame(data)
+print (df)
+
